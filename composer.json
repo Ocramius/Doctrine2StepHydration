@@ -4,8 +4,8 @@
         "php":          "~5.5|~7.0"
     },
     "autoload": {
-        "classmap": [
-            "models.php"
-        ]
+        "psr-4": {
+            "Doctrine2StepHydration\\": "models"
+        }
     }
 }

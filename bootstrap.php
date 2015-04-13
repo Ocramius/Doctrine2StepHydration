@@ -15,7 +15,7 @@ AnnotationRegistry::registerLoader('class_exists');
 
 $configuration = new Configuration();
 
-$configuration->setMetadataDriverImpl(new AnnotationDriver(new AnnotationReader(), [__DIR__ . '/mappings']));
+$configuration->setMetadataDriverImpl(new AnnotationDriver(new AnnotationReader(), [__DIR__ . '/models']));
 $configuration->setProxyDir(sys_get_temp_dir() . '/example' . uniqid());
 $configuration->setProxyNamespace('ProxyExample');
 $configuration->setAutoGenerateProxyClasses(ProxyFactory::AUTOGENERATE_EVAL);
