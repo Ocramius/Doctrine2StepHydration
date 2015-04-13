@@ -5,7 +5,7 @@
     },
     "autoload": {
         "classmap": [
-            "src/models.php"
+            "models.php"
         ]
     }
 }
