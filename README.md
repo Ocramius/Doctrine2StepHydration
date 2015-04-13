@@ -11,3 +11,10 @@ Simply open your terminal and run
 ```sh
 ./run.sh
 ```
+
+To play around with the amount of records in each table, you can define environment variables:
+
+
+```sh
+USERS=1000 SOCIAL_ACCOUNTS=15 SESSIONS=20 ./run.sh
+```
