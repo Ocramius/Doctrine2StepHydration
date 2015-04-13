@@ -1,5 +1,10 @@
 {
     "require": {
         "doctrine/orm": "~2.5"
+    },
+    "autoload": {
+        "classmap": [
+            "src/models.php"
+        ]
     }
 }
