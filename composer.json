@@ -1,6 +1,7 @@
 {
     "require": {
-        "doctrine/orm": "~2.5"
+        "doctrine/orm": "~2.5",
+        "php":          "~5.5|~7.0"
     },
     "autoload": {
         "classmap": [
