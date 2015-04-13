@@ -4,6 +4,8 @@ This repository is an example of how to implement 2 step hydration with Doctrine
 
 Examples will be provided with the repository itself.
 
+You can read more about the concept behind this repository at https://ocramius.github.io/blog/doctrine-orm-optimization-hydration
+
 ### Running the examples
 
 Simply open your terminal and run
