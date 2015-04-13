@@ -18,7 +18,7 @@ $schemaTool->createSchema($metadata);
 echo 'Disabling Logger now (too verbose)' . PHP_EOL;
 $configuration->setSQLLogger(null);
 
-$users          = (int) getenv('USERS') ?: 10;
+$users          = (int) getenv('USERS') ?: 100;
 $socialAccounts = (int) getenv('SOCIAL_ACCOUNTS') ?: 10;
 $sessions       = (int) getenv('SESSIONS') ?: 10;
 
