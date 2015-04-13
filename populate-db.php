@@ -19,7 +19,7 @@ $users          = (int) getenv('USERS') ?: 10;
 $socialAccounts = (int) getenv('SOCIAL_ACCOUNTS') ?: 10;
 $sessions       = (int) getenv('SESSIONS') ?: 10;
 
-for ($i = 0; $i < $usersAmount; $i += 1) {
+for ($i = 0; $i < $users; $i += 1) {
     $user = new User();
 
     for ($j = 0; $j < $socialAccounts; $j += 1) {
