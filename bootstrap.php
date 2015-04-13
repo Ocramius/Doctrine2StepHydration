@@ -24,7 +24,7 @@ $configuration->setAutoGenerateProxyClasses(ProxyFactory::AUTOGENERATE_EVAL);
 $entityManager = EntityManager::create(
     [
         'driverClass' => Driver::class,
-        'path'        => __DIR__ . '/data/test-db.sqlite',
+        'path'        => __DIR__ . '/test-db.sqlite',
     ],
     $configuration
 );
