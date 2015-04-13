@@ -8,7 +8,6 @@ use Doctrine\ORM\Configuration;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\Mapping\Driver\AnnotationDriver;
 use Doctrine\ORM\Proxy\ProxyFactory;
-use Doctrine\ORM\Tools\SchemaTool;
 
 require_once __DIR__ . '/vendor/autoload.php';
 
@@ -27,12 +26,6 @@ $entityManager = EntityManager::create(
         'path'        => __DIR__ . '/test-db.sqlite',
     ],
     $configuration
-);
-
-$schemaTool = new SchemaTool($entityManager);
-
-$schemaTool->updateSchema(
-    $entityManager->getMetadataFactory()->getAllMetadata()
 );
 
 $configuration->setSQLLogger(new EchoSQLLogger());
